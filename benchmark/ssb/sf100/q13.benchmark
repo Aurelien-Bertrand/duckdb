@@ -1,0 +1,8 @@
+# name: benchmark/ssb/sf100/q13.benchmark
+# description: Run query 13 from the SSB benchmark (single-threaded)
+# group: [sf100]
+
+template benchmark/ssb/ssb.benchmark.in
+SCALING_FACTOR=100
+QUERY_NUMBER=13
+QUERY_NUMBER_PADDED=13

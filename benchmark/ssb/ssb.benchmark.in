@@ -1,0 +1,15 @@
+# name: ${FILE_PATH}
+# description: ${DESCRIPTION}
+# group: [sf${SCALING_FACTOR}]
+
+name Q${QUERY_NUMBER_PADDED}
+group ssb
+subgroup sf${SCALING_FACTOR}
+
+cache ssb_sf${SCALING_FACTOR}.duckdb
+
+load benchmark/ssb/sf${SCALING_FACTOR}/load.sql
+
+run benchmark/ssb/queries/q${QUERY_NUMBER_PADDED}.sql
+
+result benchmark/ssb/answers/sf${SCALING_FACTOR}/q${QUERY_NUMBER_PADDED}.csv

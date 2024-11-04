@@ -1,0 +1,8 @@
+# name: benchmark/ssb/sf10/q43.benchmark
+# description: Run query 43 from the SSB benchmark (single-threaded)
+# group: [sf10]
+
+template benchmark/ssb/ssb.benchmark.in
+SCALING_FACTOR=10
+QUERY_NUMBER=43
+QUERY_NUMBER_PADDED=43

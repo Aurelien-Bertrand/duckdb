@@ -1,0 +1,8 @@
+# name: benchmark/ssb/sf1/q41.benchmark
+# description: Run query 41 from the SSB benchmark (single-threaded)
+# group: [sf1]
+
+template benchmark/ssb/ssb.benchmark.in
+SCALING_FACTOR=1
+QUERY_NUMBER=41
+QUERY_NUMBER_PADDED=41

@@ -1,0 +1,8 @@
+# name: benchmark/ssb/sf10/q33.benchmark
+# description: Run query 33 from the SSB benchmark (single-threaded)
+# group: [sf10]
+
+template benchmark/ssb/ssb.benchmark.in
+SCALING_FACTOR=10
+QUERY_NUMBER=33
+QUERY_NUMBER_PADDED=33
